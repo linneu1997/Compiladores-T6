@@ -10,7 +10,7 @@
 [Introdução](#introdução) <br>
 [Gramática](#gramática) <br>
 [Compilar](#compilar) <br>
-[Vídeo auxiliar](#vídeo-auxiliar)
+[Vídeo](#vídeo)
 
 ## INTRODUÇÃO
 
@@ -62,4 +62,5 @@ java -jar PATH/TO/EXEC/recipe-1.0-SNAPSHOT-jar-with-dependencies.jar PATH/TO/FIL
 
 Além disso, alguns casos de testes podem ser usados como entrada: [casos de teste](https://github.com/linneu1997/Compiladores-T6/tree/main/casos%20de%20teste)
 
-## VÍDEO AUXILIAR
+## VÍDEO
+Disponível em: [link](https://www.youtube.com/watch?v=wE-U6-ifkEU)
