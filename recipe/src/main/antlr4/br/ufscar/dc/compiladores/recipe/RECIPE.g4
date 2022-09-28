@@ -1,0 +1,37 @@
+grammar RECIPE;
+
+NUMERO: ('0'..'9')+;
+INGREDIENTE: ('A'..'Z')(('a'..'z') | ('A'..'Z'))*;
+TEMPERO: ('a'..'z')+;
+CADEIA:'"' ( ESC_SEQ | ~('"') )* '"';
+fragment ESC_SEQ: '\\"';
+COMENTARIO:'$' ~('\n'|'\r')* '\r'? '\n' -> skip;
+WS: ( ' ' |'\t' | '\r' | '\n')+ -> skip;
+
+receita: 'receita' nome capa? tempo_prep paragrafo* ingredientes metodo 'fim_receita' EOF;
+capa: 'Capa' ':' CADEIA;
+nome: 'Nome' ':' CADEIA;
+tempo_prep: 'Tempo' ':' tempo+;
+unidade_tempo: 'hora' | 'min' | 'seg';
+paragrafo: 'Paragrafo' ':' CADEIA; 
+ingredientes: 'Ingredientes' ':' lista_ingredientes+ lista_tempero* 'fim_ingredientes';
+lista_ingredientes: (medida_solido | medida_liq) 'de' INGREDIENTE;
+medida_solido: NUMERO ('g' | 'colher' tipo_colher | 'xicara');
+medida_liq: NUMERO ('ml' | 'l' | 'xicara' | 'copo');
+lista_tempero: NUMERO (peso='g' | 'colher' tipo_colher | 'xicara') 'de' TEMPERO | pitada='pitada' TEMPERO | TEMPERO a_gosto='a_gosto';
+tipo_colher: 'cha' | 'sobremesa' | 'sopa';
+metodo: 'Metodo' ':' cmd* 'fim_metodo'; 
+cmd: cmdAsse | cmdCozinhe | cmdMisture | cmdCorte | cmdBata | cmdDescanse | cmdPasso | cmdPao_de_Lo | cmdCobertura | cmdArroz | cmdBaseRisotto;
+cmdAsse: 'asse' '(' INGREDIENTE ',' tempo ',' temperatura=NUMERO ')';
+cmdCozinhe: 'cozinhe' '(' INGREDIENTE ',' tempo ')';
+cmdMisture: 'misture' '(' INGREDIENTE (',' INGREDIENTE)+ ')';
+cmdCorte: 'corte' '(' INGREDIENTE ',' tipo_corte ')';
+cmdBata: 'bata' '(' INGREDIENTE (',' INGREDIENTE)+ ')';
+cmdDescanse: 'descanse' '(' tempo ')';
+cmdPasso: 'passo' '(' CADEIA ')';
+cmdPao_de_Lo: 'Pao_de_Lo' '(' ')';
+cmdCobertura: 'cobertura' '(' ')';
+cmdArroz: 'arroz' '(' ')';
+cmdBaseRisotto: 'risotto' '(' ')';
+tipo_corte: 'picar' | 'ralar' | 'cortar';
+tempo: NUMERO unidade_tempo;

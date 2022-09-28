@@ -1,0 +1,19 @@
+receita
+Nome:"Brigadeiro"
+Tempo:20 min
+Paragrafo:"Uma receita de brigadeiro."
+Paragrafo:"Utilizada apenas para testar erros semânticos."
+
+Ingredientes:
+$Erro semântico: "LeiteCondensado" declarado 2 vezes
+400g de LeiteCondensado
+300ml de LeiteCondensado
+1 colher sopa de Margarina
+3 colher sopa de ChocolateEmPo
+fim_ingredientes
+
+Metodo:
+cozinhe(LeiteCondensado, 20 min)
+misture(LeiteCondensado, ChocolateEmPo, Margarina)
+fim_metodo
+fim_receita

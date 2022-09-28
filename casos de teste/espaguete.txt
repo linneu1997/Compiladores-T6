@@ -1,0 +1,29 @@
+receita
+Nome:"Espaguete"
+Capa:"imagens/espaguete.jpg"
+Tempo:20 min
+
+Ingredientes:
+300 g de Espaguete
+1 l de Agua
+700 g de Tomate
+1 colher sopa de Alho
+1 xicara de CebolaPicada
+250 g de Parmesao
+100 g de cheiroverde
+sal a_gosto
+pitada pimenta
+fim_ingredientes
+
+Metodo:
+corte(Tomate, cortar)
+passo("Em uma panela, refogue o alho e a cebola.")
+cozinhe(Tomate, 30 min)
+cozinhe(Espaguete, 5 min)
+misture(Espaguete, Tomate)
+passo("Termine de cozinhar o espaguete no molho por cerca de 2 min.")
+passo("Adicione o cheiro verde, o sal e a pimenta.")
+corte(Parmesao, ralar)
+misture(Parmesao, Espaguete)
+fim_metodo
+fim_receita

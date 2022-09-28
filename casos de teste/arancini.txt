@@ -1,0 +1,27 @@
+receita
+Nome:"Arancini"
+Capa:"arancini.jpg"
+Tempo:1 hora 15 min
+Paragrafo:"Arancino é um produto tradicional da culinária da ilha da Sicília, na Itália. Trata-se de um pastel de arroz frito, com um diâmetro entre 8 e 10 cm, recheado com um molho de carne picada. Por vezes, é também recheado com molho de tomate, queijo mozzarella, ervilhas ou outros ingredientes. - Wikipedia"
+
+Ingredientes:
+2 xicara de ArrozArboreo
+1 xicara de Cebola
+1 colher sobremesa de Alho
+1 xicara de Vinho
+5 xicara de CaldoDeLegumes
+1 colher sopa de Manteiga
+250 g de Parmesao
+300 ml de Oleo
+300 g de FarinhaDeRosca
+sal a_gosto
+pitada pimenta
+fim_ingredientes
+
+Metodo:
+risotto()
+passo("Empane o risotto na farinha de rosca, fazendo pequenas bolinhas.")
+passo("Frite as bolinhas de risotto até dourar.")
+descanse(15 min)
+fim_metodo
+fim_receita

@@ -1,0 +1,22 @@
+receita
+Nome:"Arroz"
+Tempo:30 min
+Paragrafo:"Uma receita de arroz."
+Paragrafo:"Utilizada apenas para testar erros léxicos"
+
+Ingredientes:
+2 xicara de Arroz
+4 xicara de Agua
+1 xicara de Cebola
+1 colher sopa de Alho
+sal a_gosto
+fim_ingredientes
+
+Metodo:
+passo("Refogue a cebola e o alho")
+cozinhe(Arroz, 20 min)
+$Erro sintático - O compilador espera apenas ingredientes na função "misture", sal é um tempero:
+misture(Arroz, sal)
+passo("Espera a água secar")
+fim_metodo
+fim_receita

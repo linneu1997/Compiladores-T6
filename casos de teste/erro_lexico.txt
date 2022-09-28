@@ -1,0 +1,22 @@
+receita
+Nome:"Arroz"
+Tempo:30 min
+$Erro sintático (deveria ser Paragrafo):
+Paragrfo:"Uma receita simples de arroz."
+Paragrafo:"Utilizada apenas para testar erros léxicos"
+
+Ingredientes:
+2 xicara de Arroz
+4 xicara de Agua
+1 xicara de Cebola
+1 colher sopa de Alho
+sal a_gosto
+fim_ingredientes
+
+Metodo:
+$Outro erro sintático (deveria ser passo):
+pass("Refogue a cebola e o alho")
+cozinhe(Arroz, 20 min)
+passo("Espera a água secar")
+fim_metodo
+fim_receita
