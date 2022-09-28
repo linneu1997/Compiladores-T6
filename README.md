@@ -1,5 +1,5 @@
 <h1 align="center" color="blue">RECIPE - Linguagem para escrever receitas e gerar um código HTML.</h1>
-<h2 align="center" color="blue">TRABALHO 6 - COMPILADORES 1</h2>
+<h2 align="center" color="blue">TRABALHO 6 - CONSTRUÇÃO DE COMPILADORES</h2>
 <h3 align="center" color="blue"> Universidade Federal de São Carlos - Prof. Daniel Lucrédio </h2>
 <br>
 <h3 align="center" color="blue"> Autor:</h2>
